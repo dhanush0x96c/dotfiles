@@ -5,6 +5,7 @@
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "github.copilot.editor.enableAutoCompletions": false
 }
