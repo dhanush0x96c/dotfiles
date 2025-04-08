@@ -199,7 +199,8 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 # Bat configuration
-download_file "https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme" "$(bat --config-dir)/themes/Catppuccin Mocha.tmTheme" && bat cache --build
+download_file "https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme" "$(bat --config-dir)/themes/Catppuccin Mocha.tmTheme"
+test -f "$HOME/.cache/bat/themes.bin" || bat cache --build 
 export BAT_THEME="Catppuccin Mocha"
 alias cat="bat"
 
