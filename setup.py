@@ -1,3 +1,4 @@
+from src.setup import git
 from src.setup import kanata, tmux, vscode, zsh
 from src.utils.stow import stow
 
@@ -8,6 +9,7 @@ def main():
         stow(config)
 
     zsh.main()
+    git.main()
     tmux.main()
     vscode.main()
     kanata.main()
