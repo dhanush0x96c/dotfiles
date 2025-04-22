@@ -39,6 +39,7 @@
       "default": "󰋙 "
     },
     "sort-by-number": true,
+    "reverse-scrolling": true,
     "on-scroll-up": "hyprctl dispatch workspace e+1",
     "on-scroll-down": "hyprctl dispatch workspace e-1"
   },
@@ -83,6 +84,7 @@
   "backlight": {
     "format": "{icon} {percent}%",
     "format-icons": ["󰃞", "󰃟", "󰃠"],
+    "reverse-scrolling": true,
     "on-scroll-up": "brightnessctl set +1%",
     "on-scroll-down": "brightnessctl set 1%-"
   },
@@ -123,6 +125,7 @@
       "car": "󰄋",
       "default": ["󰕿", "󰖀", "󰕾"]
     },
+    "reverse-scrolling": true,
     "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
   },
   "custom/media": {
