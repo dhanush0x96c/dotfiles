@@ -100,15 +100,14 @@
     "tooltip-format": "Battery at {capacity}%\n{timeTo}"
   },
   "network": {
-    "interface": "enp*",
+    "interface-ethernet": "enp*",
+    "interface-wifi": "wlan*",
     "format-wifi": "󰖩 {essid} ({signalStrength}%)",
-    "format-ethernet": "󰈀 {ipaddr}/{cidr}",
-    "tooltip-format": "󰊗 {ifname} via {gwaddr}",
-    "format-linked": "󰈀 {ifname} (No IP)",
+    "format-ethernet": "󰈀 Connected",
+    "tooltip-format": "󰩟 {gwaddr}",
     "format-disconnected": "󰖪 Disconnected",
-    "format-alt": "󱘖 {bandwidthUpBytes} 󱘗 {bandwidthDownBytes}",
-    "interval": 5,
-    "tooltip-format-wifi": "Signal Strength: {signalStrength}%\nDown Speed: {bandwidthDownBytes}\nUp Speed: {bandwidthUpBytes}"
+    "format-alt": " {bandwidthUpBytes}  {bandwidthDownBytes}",
+    "interval": 5
   },
   "wireplumber": {
     "format": "{icon} {volume}%",
