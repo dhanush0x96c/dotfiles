@@ -10,5 +10,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "github.copilot.enable": {
     "*": false
-  }
+  },
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": false
 }
