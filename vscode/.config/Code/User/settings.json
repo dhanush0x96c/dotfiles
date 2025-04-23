@@ -8,5 +8,7 @@
   "editor.formatOnSave": true,
   "files.autoSave": "afterDelay",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "github.copilot.editor.enableAutoCompletions": false
+  "github.copilot.enable": {
+    "*": false
+  }
 }
