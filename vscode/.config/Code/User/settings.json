@@ -12,5 +12,6 @@
     "*": false
   },
   "vim.useSystemClipboard": true,
+  "vim.smartRelativeLine": true,
   "vim.useCtrlKeys": false
 }
