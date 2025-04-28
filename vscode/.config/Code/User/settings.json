@@ -6,6 +6,9 @@
   "editor.fontLigatures": true,
   "terminal.integrated.fontLigatures.enabled": true,
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
   "files.autoSave": "afterDelay",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "github.copilot.enable": {
