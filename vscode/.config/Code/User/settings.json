@@ -1,8 +1,11 @@
 {
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 1,
   "editor.fontFamily": "Jetbrains Mono",
+  "editor.fontSize": 18,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "terminal.integrated.fontSize": 18,
   "editor.fontLigatures": true,
   "terminal.integrated.fontLigatures.enabled": true,
   "editor.formatOnSave": true,
