@@ -54,7 +54,7 @@
 
 /* Base Styles */
 * {
-  font-family: "Inconsolata Nerd Font", monospace;
+  font-family: "JetBrainsMono Nerd Font", monospace;
   font-size: 14px;
   transition: all 0.2s ease;
 }
