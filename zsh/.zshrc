@@ -129,6 +129,7 @@ plugins=(
   tmux
   1password
   eza
+  golang
 
   zsh-syntax-highlighting
   zsh-autosuggestions
@@ -200,7 +201,7 @@ export VISUAL=nvim
 
 # Bat configuration
 download_file "https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme" "$(bat --config-dir)/themes/Catppuccin Mocha.tmTheme"
-test -f "$HOME/.cache/bat/themes.bin" || bat cache --build 
+test -f "$HOME/.cache/bat/themes.bin" || bat cache --build
 export BAT_THEME="Catppuccin Mocha"
 alias cat="bat"
 
@@ -209,11 +210,21 @@ download_file "https://raw.githubusercontent.com/catppuccin/delta/refs/heads/mai
 download_file "https://raw.githubusercontent.com/catppuccin/lazygit/refs/heads/main/themes/mocha/blue.yml" $(lazygit --print-config-dir)/config.yml
 download_file "https://raw.githubusercontent.com/catppuccin/gitkraken/refs/heads/main/themes/catppuccin-mocha.jsonc" "$HOME/.gitkraken/themes/catppuccin-mocha.jsonc"
 
+# Save original
+zle -A clear-screen .orig-clear-screen
+
+# Override
 clear-screen() {
-  local precmd
-  for precmd in $precmd_functions; do
-    $precmd
-  done
-  printf "\e[3J\e[H"
+    zle orig-clear-screen
+    for precmd in $precmd_functions; do
+        $precmd
+    done
+    p10k reload
 }
-zle -N clear-screen clear-screen
+
+zle -N clear-screen
+
+export PATH=$PATH:$HOME/go/bin
+
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
