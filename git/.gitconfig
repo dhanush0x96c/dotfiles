@@ -1,6 +1,6 @@
 # This is Git's per-user configuration file.
 [user]
-	email = dhanushshetty2412@gmail.com
+	email = 154754292+dhanush0x96c@users.noreply.github.com
 	name = Dhanush Shetty
 [credential "https://github.com"]
 	helper = !/usr/bin/gh auth git-credential
@@ -9,7 +9,7 @@
 [init]
 	defaultBranch = main
 [core]
-	editor = code --wait
+	editor = nvim
     pager = delta
 	autocrlf = input
 [diff]
